@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Héctor - DIW</title>
+    <!-- Cargamos reset de estilos de internet -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- Cargamos nuestros estilos -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Cargamos Fontawesome - Se usa en el footer -->
+    <script
+      src="https://kit.fontawesome.com/fa63d3d034.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Precargamos imágenes del hero -->
+    <link rel="preload" as="ïmage" href="./media/hero1.jpg" />
+    <link rel="preload" as="ïmage" href="./media/hero2.jpg" />
+    <link rel="preload" as="ïmage" href="./media/hero3.jpg" />
+
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Parallax library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./script/parallax.min.js"></script>
+  </head>
+
+  <body>
+    <!-- ! Nav -->
+    <nav class="navigation" id="navigation">
+      <ul>
+        <li><a href="#navegacion">NOE</a></li>
+        <li><a href="#conocenos">Conócenos</a></li>
+        <li><a href="#filosofia">Filosofía</a></li>
+        <li><a href="#video">video</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="#faqs">FAQS</a></li>
+      </ul>
+    </nav>
+
+    <!-- !Hero -->
+    <!-- ==================== -->
+    <!-- Principal: Slideshow -->
+    <!-- ==================== -->
+    <section class="hero" id="hero">
+      <div class="centrador">
+        <h1 class="hero__title">Hacemos mochilas con amor</h1>
+      </div>
+    </section>
+
+    <!-- ! Pestañas / Filosofía -->
+    <!-- =================== -->
+    <!-- Principal: Pestañas -->
+    <!-- =================== -->
+
+    <!-- ========================================== -->
+    <!-- Complementaria: Tooltip                    -->
+    <!-- Las imagenes de esta sección               -->
+    <!-- tienen un atributo para mostrar el tooltip -->
+    <!-- ========================================== -->
+    <section class="pestanas" id="filosofia">
+      <div class="centrador">
+        <div class="pestanas__up">
+          <h4 data-name="happy-customers" class="activo">Clientes contentos</h4>
+          <h4 data-name="everyone-happy">Todos felices</h4>
+          <h4 data-name="more-love">Mas amor</h4>
+        </div>
+
+        <div class="pestanas__down">
+          <div class="pestanas__slide activo" data-name="happy-customers">
+            <div>
+              <img
+                src="./media/mochila1.png"
+                data-tooltip="Modelo Alfa"
+                alt=""
+              />
+            </div>
+
+            <div class="">
+              <h3>Queremos que estés contento</h3>
+              <p>
+                Lo que más nos importa es que estés contento con tu mochila. Esa
+                es y será nuestra principal prioridad. Por eso ponemos tanto
+                cariño en cada una de nuestras mochilas.
+              </p>
+            </div>
+          </div>
+
+          <div class="pestanas__slide" data-name="everyone-happy">
+            <div>
+              <img
+                src="./media/mochila2.png"
+                data-tooltip="Modelo Smart"
+                alt=""
+              />
+            </div>
+
+            <div class="">
+              <h3>Nuestro objetivo es que te guste</h3>
+              <p>
+                Lo que más nos importa es que estés contento con tu mochila. Esa
+                es y será nuestra principal prioridad. Por eso ponemos tanto
+                cariño en cada una de nuestras mochilas.
+              </p>
+            </div>
+          </div>
+
+          <div class="pestanas__slide" data-name="more-love">
+            <div>
+              <img
+                src="./media/mochila3.png"
+                data-tooltip="Modelo Batalla"
+                alt=""
+              />
+            </div>
+
+            <div class="">
+              <h3>Ayudanos a ayudar</h3>
+              <p>
+                Lo que más nos importa es que estés contento con tu mochila. Esa
+                es y será nuestra principal prioridad. Por eso ponemos tanto
+                cariño en cada una de nuestras mochilas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Parallax -->
+    <!-- ========================================= -->
+    <!-- Complementaria: Parallax                  -->
+    <!-- También se carga la librería en el head   -->
+    <!-- ========================================= -->
+    <div
+      class="parallax-container"
+      data-parallax="scroll"
+      data-bleed="10"
+      data-speed="0.2"
+      data-image-src="/media/parallax.jpg"
+      data-natural-width="1920"
+      data-natural-height="1400"
+      style="height: 500px"
+    ></div>
+
+    <!-- ! Conocenos -->
+    <!-- ! Uso de animaciones AOS -->
+    <!-- ========================================== -->
+    <!-- Complementaria: Tooltip                    -->
+    <!-- Las imagenes de esta sección               -->
+    <!-- tienen un atributo para mostrar el tooltip -->
+    <!-- ========================================== -->
+    <section class="conocenos" id="conocenos">
+      <div class="centrador">
+        <div class="conocenos__up">
+          <h2 class="conocenos__title main-title">
+            Así nos gusta hacer las cosas
+          </h2>
+          <h3 class="conocenos__subtitle main-subtitle">
+            Le ponemos mucho mimo a nuestro productos.
+          </h3>
+        </div>
+
+        <div class="conocenos__down">
+          <div
+            class="conocenos__item"
+            data-aos="flip-down"
+            data-aos-delay="100"
+          >
+            <img
+              src="./media/icono1.png"
+              data-tooltip="Proceso 100% artesanal"
+              alt=""
+            />
+            <h4>Proceso artesanal</h4>
+            <p>Seguimos el proceso tradicional, haciendo cada mochila única.</p>
+          </div>
+
+          <div
+            class="conocenos__item"
+            data-aos="flip-down"
+            data-aos-delay="300"
+          >
+            <img
+              src="./media/icono2.png"
+              data-tooltip="Horas de trabajo"
+              alt=""
+            />
+            <h4>Dedicación</h4>
+            <p>
+              No queremos cantidad, queremos cuidar hasta el más mínimo detalle.
+            </p>
+          </div>
+
+          <div
+            class="conocenos__item"
+            data-aos="flip-down"
+            data-aos-delay="500"
+          >
+            <img
+              src="./media/icono3.png"
+              data-tooltip="Primeras calidades"
+              alt=""
+            />
+            <h4>Buenos materiales</h4>
+            <p>
+              No ahorramos en materiales. Preferimos usar buenos materiales.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Video -->
+    <!-- He reducido mucho la calidad del video (que creo que es secundaria) en favor de evitar poblemas de cara a subirlo al campus  -->
+    <section class="conocenos" id="video">
+      <div class="centrador">
+        <div class="conocenos__up">
+          <h2 class="conocenos__title main-title">DIY</h2>
+          <h3 class="conocenos__subtitle main-subtitle">
+            Te atreves a hacerlo tu mismo. ¡Te guiamos!
+          </h3>
+        </div>
+
+        <div class="conocenos__down">
+          <video src="./media/diy_backpack.mp4" muted controls></video>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Galería -->
+    <!-- ! Pestas con filtro -->
+    <section class="productos" id="productos">
+      <div class="centrador">
+        <div class="productos__up">
+          <h2 class="productos__title main-title">Nuestros productos</h2>
+          <h3 class="productos__subtitle main-subtitle">
+            Tenemos varios modelos pensados para cada tipo de persona. ¿Cuál es
+            el tuyo?
+          </h3>
+        </div>
+
+        <!-- ===================================== -->
+        <!-- Complementaria: Pestañas con filtro   -->
+        <!-- ===================================== -->
+        <div class="productos__filters">
+          <p data-filter="small">Pequeñas</p>
+          <p data-filter="medium">Medianas</p>
+          <p data-filter="big">Grandes</p>
+          <p data-filter="all" class="activo">Todos</p>
+        </div>
+
+        <div class="productos__down">
+          <img
+            src="./media/galery_smart.jpg"
+            data-filter="big"
+            data-caption="Mochila smart"
+            alt="Chica de espaldas llevando una mochila beige"
+          />
+          <img
+            src="./media/galery_brampton.jpg"
+            data-filter="medium"
+            data-caption="Mochila de trabajo brampton"
+            alt="Hombre llevando una mochila gris"
+          />
+          <img
+            src="./media/galery_daily.jpg"
+            data-filter="medium"
+            data-caption="Para tu día a día"
+            alt="Pareja de espaldas lelvando una mochila cada uno"
+          />
+          <img
+            src="./media/galery_mini.jpg"
+            data-filter="small"
+            data-caption="Para esos días ligeros"
+            alt="Señora con un mochila pequeña en las manos"
+          />
+          <img
+            src="./media/galery_nordace.jpg"
+            data-filter="big"
+            data-caption="Para tus aventuras"
+            alt="Chica de excusrión llevando una mochila con una botella de agua en un lado"
+          />
+          <img
+            src="./media/galery_mens.jpg"
+            data-filter="medium"
+            data-caption="Para los más atrevidos"
+            alt="Chico mirando a la playa"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Lightbox -->
+    <!-- =================== -->
+    <!-- Principal: Lightbox -->
+    <!-- =================== -->
+    <div class="lightbox-galeria">
+      <i class="lightbox-galeria__arrow close fa-solid fa-xmark"></i>
+
+      <i class="lightbox-galeria__arrow prev fa-solid fa-arrow-left"></i>
+      <div class="lightbox-galeria__img-wrapper">
+        <img src="" alt="" />
+        <p></p>
+      </div>
+      <i class="lightbox-galeria__arrow next fa-solid fa-arrow-right"></i>
+    </div>
+
+    <!-- ! Formulario -->
+    <!-- ! Uso de animaciones AOS -->
+    <section class="contacto" id="contacto">
+      <div class="centrador">
+        <form
+          action=""
+          class="contacto__form"
+          data-aos="flip-down"
+          data-aos-delay="100"
+        >
+          <h4>Contacto</h4>
+
+          <input type="text" id="nombre" required placeholder="Nombre" />
+          <input type="text" id="telefono" required placeholder="Teléfono" />
+          <input type="email" id="email" required placeholder="E-mail" />
+          <input
+            type="text"
+            id="mensaje"
+            required
+            placeholder="Me gustaría..."
+          />
+          <input type="submit" id="enviar-form" value="Enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!-- ! Modal formulario -->
+    <!-- ================= -->
+    <!-- Principal: Modal  -->
+    <!-- ================= -->
+    <div class="modal-form">
+      <i class="modal-form__close fa-solid fa-xmark"></i>
+
+      <div class="modal-form__box-wrapper">
+        <p>Hola <span id="modal-nombre"></span>,</p>
+        <p>
+          Hemos recibido tu mesaje. Nos pondremos en contacto respondiendote a
+          <span id="modal-email"></span>, o llamandote al
+          <span id="modal-telefono"></span>
+        </p>
+        <p>Gracias!</p>
+      </div>
+    </div>
+
+    <!-- ! Acordeon/FAQS -->
+    <!-- ========================== -->
+    <!-- Complementaria: Acordeon   -->
+    <!-- ========================== -->
+    <section class="conocenos faqs" id="faqs">
+      <div class="centrador">
+        <div class="conocenos__up">
+          <h2 class="conocenos__title main-title">FAQs</h2>
+          <h3 class="conocenos__subtitle main-subtitle">
+            ¿Tienes alguna pregunta?
+          </h3>
+        </div>
+
+        <div class="faqs__down">
+          <div class="faqs__QA-block">
+            <div class="faqs__QA-block-top">
+              <h4 class="faqs__title">¿Enviais al extranjero?</h4>
+              <!-- <span class="faqs__close">x</span> -->
+              <i class="faqs__close fa-solid fa-plus rotated"></i>
+            </div>
+            <div class="faqs__QA-block-down faqs__QA-block-down--hidden">
+              <p class="faqs__answer">
+                Respuesta Lorem ipsum dolor, sit amet consectetur adipisicing
+                elitunde quos ab voluptate debitis totam, inventore voluptas a quaerat. Necessitatibus?
+              </p>
+            </div>
+          </div>
+
+          <div class="faqs__QA-block">
+            <div class="faqs__QA-block-top">
+              <h4 class="faqs__title">¿Como puedo conseguir una mochila?</h4>
+              <!-- <span class="faqs__close">x</span> -->
+              <i class="faqs__close fa-solid fa-plus rotated"></i>
+            </div>
+            <div class="faqs__QA-block-down faqs__QA-block-down--hidden">
+              <p class="faqs__answer">
+                Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Facere exercitationetium sunt unde quos ab voluptate
+                debitis totam, inventore voluptas a quaerat. Necessitatibus? Facere exercitationetium
+              </p>
+            </div>
+          </div>
+
+          <div class="faqs__QA-block">
+            <div class="faqs__QA-block-top">
+              <h4 class="faqs__title">
+                Si tengo algún problema, ¿aceptáis devoluciones?
+              </h4>
+              <!-- <span class="faqs__close">x</span> -->
+              <i class="faqs__close fa-solid fa-plus rotated"></i>
+            </div>
+            <div class="faqs__QA-block-down faqs__QA-block-down--hidden">
+              <p class="faqs__answer">
+                Respuesta Lorem ipsum dolor, sit amet consectetur adipisicing
+                elit. Facere exercitationetium ste
+                debitis totam, inventore voluptas a quaerat. Necessitatibus?
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Footer -->
+    <footer>
+      <ul>
+        <li>NOE</li>
+        <li>&#169;2023. Mochilas NOE</li>
+        <li>
+          <a href="https://www.facebook.com/">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.instagram.com/">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./script/script.js" defer></script>
+  </body>
+</html>
